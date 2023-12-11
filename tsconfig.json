@@ -18,6 +18,7 @@
       "assets/*": ["/assets/*"],
       "components/*": ["/components/*"],
       "hooks/*": ["/hooks/*"],
+      "modules/*": ["/modules/*"],
       "pages/*": ["/pages/*"],
       "services/*": ["/services/*"],
       "styles/*": ["/styles/*"],
