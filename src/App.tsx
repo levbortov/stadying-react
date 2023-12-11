@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SiteHeader from './components/SiteHeader';
+import SiteHeader from './modules/SiteHeader';
 
 const App: React.FC = () => {
   return (

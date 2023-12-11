@@ -4,7 +4,7 @@ import siteLogo from '/logo.svg';
 const SiteHeader: React.FC = () => {
   return (
     <div className="flex flex-col gap-8">
-      <div className="py-3 border-b">
+      <div className="py-3">
         <div className="container mx-auto">
           <nav>
             <ul className="flex gap-3">
@@ -30,7 +30,7 @@ const SiteHeader: React.FC = () => {
               <p className="text-sm font-medium">Сеть пиццерий №2 в России</p>
             </div>
           </div>
-          <div className="h-auto">
+          <div className="flex gap-3">
             <button>Войти</button>
             <button>Регистрация</button>
           </div>
