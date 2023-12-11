@@ -1,6 +1,7 @@
 import React from 'react';
 import siteLogo from '/logo.png';
 import Button from '@src/ui/Button';
+import NavLink from '@src/ui/NavLink';
 
 const DynamicSection: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const DynamicSection: React.FC = () => {
         </div>
         <div className="flex gap-3">
           <Button variant="secondary-tonal" size="small">
-            Войти
+            placeholder
           </Button>
         </div>
       </div>
@@ -29,14 +30,14 @@ const FixedSection: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <nav>
           <ul className="flex gap-3">
-            <li>Завтраки</li>
-            <li>Пицца</li>
-            <li>Комбо</li>
-            <li>Закуски</li>
-            <li>Коктейли</li>
+            <NavLink>placeholder</NavLink>
+            <NavLink>placeholder</NavLink>
+            <NavLink>placeholder</NavLink>
+            <NavLink>placeholder</NavLink>
+            <NavLink>placeholder</NavLink>
           </ul>
         </nav>
-        <Button variant="primary">Корзина</Button>
+        <Button variant="primary">placeholder</Button>
       </div>
     </div>
   );

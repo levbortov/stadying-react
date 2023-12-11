@@ -1,3 +1,4 @@
+import NavLink from '@src/ui/NavLink';
 import React from 'react';
 
 const Upper: React.FC = () => {
@@ -7,13 +8,13 @@ const Upper: React.FC = () => {
         <nav>
           <ul className="flex gap-3">
             <li>
-              <a href="/">Вакансии</a>
+              <NavLink>placeholder</NavLink>
             </li>
             <li>
-              <a href="/">Контакты</a>
+              <NavLink>placeholder</NavLink>
             </li>
             <li>
-              <a href="/">О нас</a>
+              <NavLink>placeholder</NavLink>
             </li>
           </ul>
         </nav>

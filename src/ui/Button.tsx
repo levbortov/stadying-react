@@ -1,7 +1,7 @@
 import React from 'react';
 
 type ButtonProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   variant?:
     | 'primary'
     | 'primary-tonal'
@@ -12,7 +12,6 @@ type ButtonProps = {
     | 'secondary-outline'
     | 'secondary-text';
   size?: 'small' | 'medium' | 'large';
-  disabled?: boolean;
   onClick?: () => void;
 };
 
@@ -20,7 +19,6 @@ const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'secondary-tonal',
   size = 'medium',
-  disabled = false,
   onClick,
 }) => {
   let buttonStyle = '';
@@ -53,8 +51,6 @@ const Button: React.FC<ButtonProps> = ({
     case 'secondary-text':
       buttonStyle = 'text-gray-800 hover:bg-gray-800/20 active:bg-gray-800/30';
       break;
-    default:
-      break;
   }
 
   let sizeStyle = '';
@@ -68,15 +64,12 @@ const Button: React.FC<ButtonProps> = ({
     case 'large':
       sizeStyle = 'px-5 py-2 text-lg';
       break;
-    default:
-      break;
   }
 
   return (
     <button
       onClick={onClick}
-      className={`rounded-full focus:outline-none ${buttonStyle} ${sizeStyle}`}
-      disabled={disabled}>
+      className={`rounded-full focus:outline-none ${buttonStyle} ${sizeStyle}`}>
       {children}
     </button>
   );
