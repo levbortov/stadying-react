@@ -13,16 +13,17 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "assets/*": ["/assets/*"],
-      "components/*": ["/components/*"],
-      "hooks/*": ["/hooks/*"],
-      "modules/*": ["/modules/*"],
-      "pages/*": ["/pages/*"],
-      "services/*": ["/services/*"],
-      "styles/*": ["/styles/*"],
-      "ui/*": ["/ui/*"]
+      "@src/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@modules/*": ["src/modules/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"],
+      "@ui/*": ["src/ui/*"]
     },
 
     /* Linting */
