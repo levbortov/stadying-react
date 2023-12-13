@@ -1,13 +1,15 @@
 import React from 'react';
 
-import Upper from './components/Upper';
-import Lower from './components/Lower';
+import TopNavigation from './components/TopNavigation';
+import Header from './components/Header';
+import FixedNavigation from './components/FixedNavigation';
 
 const index: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Upper />
-      <Lower />
+      <TopNavigation />
+      <Header />
+      <FixedNavigation />
     </div>
   );
 };
